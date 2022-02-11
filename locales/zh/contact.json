@@ -1,0 +1,22 @@
+{
+    "title": "联系我",
+    "directions": "如果您对本站有任何问题一或疑问，请提交此表格或者直接发下面的邮件联系我",
+    "email": "a6504130@gmail.com",
+    "form": {
+        "title": "填写消息",
+        "name": "姓名",
+        "email": "邮件",
+        "subject": "标题",
+        "message": "信息",
+        "messageDirections": "最大500字"
+    },
+    "button": {
+        "submit": "发送"
+    },
+    "dialog": {
+        "title": "谢谢！",
+        "content": "发送成功",
+        "buttonText": "返回主页",
+        "href": "/"
+    }
+}

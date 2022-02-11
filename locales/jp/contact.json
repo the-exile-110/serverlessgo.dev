@@ -1,0 +1,22 @@
+{
+    "title": "Contact information",
+    "directions": "このサイトに関するご質問やお問い合わせは、このフォームを送信していただくか、下記のメールに直接ご連絡ください。",
+    "email": "a6504130@gmail.com",
+    "form": {
+        "title": "メッセージを送る",
+        "name": "名前",
+        "email": "メールアドレス",
+        "subject": "タイトル",
+        "message": "メッセージ",
+        "messageDirections": "最大500文字"
+    },
+    "button": {
+        "submit": "送信する"
+    },
+    "dialog": {
+        "title": "送信しました。",
+        "content": "ありがとうございます！",
+        "buttonText": "ホームページに戻る",
+        "href": "/"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "greeting": "Latest",
+  "description": "Next.jsとTailwind.cssで作成されたブログ",
+  "more": "もっと見る",
+  "all": "すべての投稿",
+  "search": "記事を検索",
+  "comment": "コメントを読み込む",
+  "pub": "qqteku",
+  "authors": "作者",
+  "name": "RUI",
+  "nexta": "次の記事",
+  "preva": "前の記事",
+  "nextp": "Next",
+  "prevp": "Previous",
+  "of": "of",
+  "back": "ブログに戻る",
+  "twitter": "Twitter",
+  "github": "GitHub"
+}

@@ -1,0 +1,62 @@
+{
+    "signIn": {
+        "title": "sign in",
+        "href": "/login"
+    },
+    "signUp": {
+        "title": "sign up",
+        "href": "/register"
+    },
+    "resetPassword": {
+        "title": "Existing customer?",
+        "href": "/reset-password"
+    },
+    "exams": {
+        "linkTitle": "Exam",
+        "barList": {
+            "awsSap": {
+                "title": "AWS SAP",
+                "href": "/all-post"
+            }
+        },
+        "allExam": {
+            "title": "all exam",
+            "point": "hot!",
+            "description": "Get a better understanding of where your traffic is coming from."
+        }
+    },
+    "blog": {
+        "linkTitle": "Blog",
+        "barList": {
+            "blogs": {
+                "title": "Blogs",
+                "href": "/blog"
+            },
+            "all": {
+                "title": "All posts",
+                "href": "/all-posts"
+            },
+            "tags": {
+                "title": "Tags",
+                "href": "/tags"
+            }
+        }
+    },
+    "about": {
+        "linkTitle": "About",
+        "barList": {
+            "about": {
+                "title": "About",
+                "href": "/about"
+            },
+            "faq": {
+                "title": "FAQs",
+                "href": "/faqs"
+            },
+            "contact": {
+                "title": "Contact",
+                "href": "/contact"
+            }
+        }
+    }
+}

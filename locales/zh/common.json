@@ -1,0 +1,19 @@
+{
+  "greeting": "最新文章",
+  "description": "此网站由 Next.js 和 Tailwind.css生成",
+  "more": "阅读更多",
+  "all": "全部文章",
+  "search": "查找文章",
+  "comment": "加载评论",
+  "pub": "qqteku",
+  "authors": "作者",
+  "name": "RUI",
+  "nexta": "下一篇",
+  "preva": "上一篇",
+  "nextp": "Next",
+  "prevp": "Previous",
+  "of": "of",
+  "back": "返回文章列表",
+  "twitter": "Discuter sur Twitter",
+  "github": "Voir sur GitHub"
+}

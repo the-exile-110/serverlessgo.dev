@@ -1,0 +1,34 @@
+{
+    "account": {
+        "tabName": "Account",
+        "title": "Profile",
+        "directions": "directions",
+        "form": {
+            "username": "Username",
+            "email": "Email",
+            "avatar": "Avatar"
+        },
+        "button": {
+            "change": "Change",
+            "save": "Save"
+        }
+    },
+    "password": {
+        "tabName": "Password",
+        "title": "Reset password",
+        "directions": "directions",
+        "form": {
+            "newPassword": "New password",
+            "confirmNewPassword": "Confirm new password",
+            "inconsistentPassword": "Inconsistent passwords"
+        },
+        "button": {
+            "save": "Save"
+        }
+    },
+    "billing": {
+        "tabName": "Plan & Billing",
+        "title": "Plan & Billing",
+        "directions": "Plan & Billing"
+    }
+}

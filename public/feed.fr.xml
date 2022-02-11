@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Next.js Starter Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>fr</language>
+      <managingEditor>address@yoursite.com (Tails Azimuth)</managingEditor>
+      <webMaster>address@yoursite.com (Tails Azimuth)</webMaster>
+      <lastBuildDate>Wed, 28 Jul 2021 15:32:14 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1</guid>
+    <title>Nouvelles fonctionnalités de la v1</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v1</link>
+    <description>Un aperçu des nouvelles fonctionnalités publiées dans la v1 - copie de bloc de code, auteurs multiples, mise en page frontale et plus encore</description>
+    <pubDate>Wed, 28 Jul 2021 15:32:14 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>tag francais</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog</guid>
+    <title>Introduction du blog tailwind en français</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog</link>
+    <description>Lorem Ipsum français</description>
+    <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>next-js</category><category>tailwind</category><category>guide</category>
+  </item>
+
+    </channel>
+  </rss>

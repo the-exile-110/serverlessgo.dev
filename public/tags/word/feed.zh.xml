@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>QQTEKU</title>
+      <link>https://www.qqteku.com//blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>zh</language>
+      <managingEditor>address@yoursite.com (RUI)</managingEditor>
+      <webMaster>address@yoursite.com (RUI)</webMaster>
+      <lastBuildDate>Tue, 12 Jan 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://www.qqteku.com//tags/word/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.qqteku.com//blog/batch-get-words-image</guid>
+    <title>使用Python批量提取Word文档中的图片</title>
+    <link>https://www.qqteku.com//blog/batch-get-words-image</link>
+    undefined
+    <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (RUI)</author>
+    <category>python</category><category>word</category>
+  </item>
+
+    </channel>
+  </rss>

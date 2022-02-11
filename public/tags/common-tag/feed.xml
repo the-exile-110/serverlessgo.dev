@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Next.js Starter Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en</language>
+      <managingEditor>address@yoursite.com (Tails Azimuth)</managingEditor>
+      <webMaster>address@yoursite.com (Tails Azimuth)</webMaster>
+      <lastBuildDate>Sat, 28 May 2022 15:32:14 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/common-tag/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v2</guid>
+    <title>New features in v2</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/new-features-in-v2</link>
+    <description>test for fallback behavior of internatlization</description>
+    <pubDate>Sat, 28 May 2022 15:32:14 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>common tag</category>
+  </item>
+
+    </channel>
+  </rss>

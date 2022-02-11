@@ -1,0 +1,22 @@
+{
+    "title": "Contact information",
+    "directions": "If you have any questions or queries about this site, please submit this form or contact me directly at the email below.",
+    "email": "a6504130@gmail.com",
+    "form": {
+        "title": "Send us a message",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "messageDirections": "Max. 500 characters"
+    },
+    "button": {
+        "submit": "Submit"
+    },
+    "dialog": {
+        "title": "Thanks!",
+        "content": "Sent successfully.",
+        "buttonText": "Back home",
+        "href": "/"
+    }
+}

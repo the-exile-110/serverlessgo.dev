@@ -1,0 +1,23 @@
+{
+  "locales": [
+    "en",
+    "jp",
+    "zh"
+  ],
+  "defaultLocale": "en",
+  "pages": {
+    "*": [
+      "common",
+      "404",
+      "auth",
+      "blog",
+      "header",
+      "userMenu",
+      "contact",
+      "faq"
+    ],
+    "/projects": [
+      "projects"
+    ]
+  }
+}
