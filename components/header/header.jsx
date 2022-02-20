@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/link";
 import classnames from "classnames";
 import { useRouter } from "next/router";
 import { Disclosure } from "@headlessui/react";
@@ -47,7 +47,7 @@ const Header = () => {
                           item.href === router.pathname
                             ? "border-sky-300 dark:border-white text-gray-900 dark:text-gray-50"
                             : "border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700",
-                          "inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium"
+                          "inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium h-full focus:outline-none transition-colors duration-150"
                         )}
                         aria-current={item.href === router.pathname ? "page" : undefined}
                       >

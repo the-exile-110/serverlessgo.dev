@@ -1,4 +1,4 @@
-import Link from "@/components/Link";
+import Link from "@/components/link";
 import Image from "next/image";
 
 const Card = ({ title, description, imgSrc, href }) => (

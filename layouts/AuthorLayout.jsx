@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PageSeo } from "@/components/SEO";
+import { PageSeo } from "@/components/seo";
 
 import useTranslation from "next-translate/useTranslation";
 

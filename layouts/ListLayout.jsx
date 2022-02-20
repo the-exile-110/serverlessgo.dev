@@ -1,7 +1,7 @@
-import Link from "@/components/Link";
-import Tag from "@/components/Tag";
+import Link from "@/components/link";
+import Tag from "@/components/tag";
 import { useState } from "react";
-import Pagination from "@/components/Pagination";
+import Pagination from "@/components/pagination";
 import formatDate from "@/lib/utils/formatDate";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";

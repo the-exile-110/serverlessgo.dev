@@ -1,13 +1,8 @@
 import fs from "fs";
-import PageTitle from "@/components/PageTitle";
+import PageTitle from "@/components/page-title";
 import generateRss from "@/lib/generate-rss";
-import { MDXLayoutRenderer } from "@/components/MDXComponents";
-import {
-  formatSlug,
-  getAllFilesFrontMatter,
-  getFileBySlug,
-  getFiles,
-} from "@/lib/mdx";
+import { MDXLayoutRenderer } from "@/components/mdx-components";
+import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from "@/lib/mdx";
 
 const DEFAULT_LAYOUT = "PostLayout";
 
@@ -34,9 +29,7 @@ export async function getStaticPaths({ locales, defaultLocale }) {
 export async function getStaticProps({ defaultLocale, locale, params }) {
   const otherLocale = locale !== defaultLocale ? locale : "";
   const allPosts = await getAllFilesFrontMatter("blog", otherLocale);
-  const postIndex = allPosts.findIndex(
-    (post) => formatSlug(post.slug) === params.slug.join("/")
-  );
+  const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join("/"));
   const prev = allPosts[postIndex + 1] || null;
   const next = allPosts[postIndex - 1] || null;
   const post = await getFileBySlug("blog", params.slug.join("/"), otherLocale);
@@ -49,10 +42,7 @@ export async function getStaticProps({ defaultLocale, locale, params }) {
 
   // rss
   const rss = generateRss(allPosts, locale);
-  fs.writeFileSync(
-    `./public/feed${otherLocale === "" ? "" : `.${otherLocale}`}.xml`,
-    rss
-  );
+  fs.writeFileSync(`./public/feed${otherLocale === "" ? "" : `.${otherLocale}`}.xml`, rss);
 
   return { props: { post, authorDetails, prev, next } };
 }

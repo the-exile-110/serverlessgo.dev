@@ -9,7 +9,6 @@
     "*": [
       "common",
       "404",
-      "auth",
       "blog",
       "header",
       "userMenu",

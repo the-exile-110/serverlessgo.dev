@@ -1,7 +1,7 @@
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 import siteMetadata from "@/data/siteMetadata";
 import ListLayout from "@/layouts/ListLayout";
-import { PageSeo } from "@/components/SEO";
+import { PageSeo } from "@/components/seo";
 
 import useTranslation from "next-translate/useTranslation";
 
@@ -23,10 +23,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   const { t } = useTranslation();
   return (
     <>
-      <PageSeo
-        title={`Blog - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-      />
+      <PageSeo title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}

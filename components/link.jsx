@@ -8,16 +8,16 @@ const CustomLink = ({ href, ...rest }) => {
   if (isInternalLink) {
     return (
       <Link href={href}>
-        <a {...rest} />
+        <button type="button" {...rest} />
       </Link>
     );
   }
 
   if (isAnchorLink) {
-    return <a href={href} {...rest} />;
+    return <a type="button" href={href} {...rest} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
+  return <a type="button" target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
 };
 
 export default CustomLink;
