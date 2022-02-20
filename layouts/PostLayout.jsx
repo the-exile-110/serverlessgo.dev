@@ -21,7 +21,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         authorDetails={authorDetails}
         {...frontMatter}
       />
-      <article className="flex justify-center w-3/5 mt-5">
+      <article className="flex justify-center w-full mt-5">
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
@@ -83,7 +83,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           {/* blog */}
           <div className="pb-8 divide-y divide-gray-200">
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="flex flex-col items-start content-center justify-center w-full pt-10 pb-8 prose dark:prose-dark">
+              <div className="flex flex-col content-center justify-center w-full pt-10 pb-8 prose dark:prose-dark">
                 {children}
               </div>
             </div>

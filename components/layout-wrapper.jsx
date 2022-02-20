@@ -1,6 +1,6 @@
-import SectionContainer from "@/components/SectionContainer";
-import Header from "@/components/header/Header";
-import Footer from "@/components/Footer";
+import SectionContainer from "@/components/section-container";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer";
 
 const LayoutWrapper = ({ children }) => {
   return (

@@ -34,7 +34,7 @@ const i18nConfig = require("../i18n.json");
         return [[page, defaultLocale]];
       }
 
-      throw new Error("Sitemap case missing, please check scripts/GenerateSitemap.js");
+      throw new Error("Sitemap case missing, please check scripts/generate-sitemap.js");
     })
     .flat()
     .map(([page, loc]) => [

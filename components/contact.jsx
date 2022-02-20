@@ -20,7 +20,7 @@ export default function Contact() {
     if (response.ok) setIsOpen(true);
   };
   return (
-    <div className="flex items-center justify-center w-full h-full p-20 dark:bg-gray-600">
+    <div className="flex items-center justify-center w-full h-full p-20">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="relative bg-white shadow-xl rounded-xl dark:bg-gray-600">
           <div className="grid grid-cols-1 lg:grid-cols-3">

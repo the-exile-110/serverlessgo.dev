@@ -1,7 +1,7 @@
-import Link from "@/components/Link";
-import PageTitle from "@/components/PageTitle";
-import SectionContainer from "@/components/SectionContainer";
-import { BlogSeo } from "@/components/SEO";
+import Link from "@/components/link";
+import PageTitle from "@/components/page-title";
+import SectionContainer from "@/components/section-container";
+import { BlogSeo } from "@/components/seo";
 import siteMetadata from "@/data/siteMetadata";
 import formatDate from "@/lib/utils/formatDate";
 import useTranslation from "next-translate/useTranslation";

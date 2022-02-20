@@ -1,7 +1,7 @@
 import siteMetadata from "@/data/siteMetadata";
 import projectsData from "@/data/projectsData";
-import Card from "@/components/Card";
-import { PageSeo } from "@/components/SEO";
+import Card from "@/components/card";
+import { PageSeo } from "@/components/seo";
 import useTranslation from "next-translate/useTranslation";
 
 import { useRouter } from "next/router";

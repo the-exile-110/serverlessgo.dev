@@ -3,8 +3,8 @@ import classnames from "classnames";
 import { useRouter } from "next/router";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import ThemeSwitch from "@/components/header/ThemeSwitch";
-import LanguageSelect from "@/components/header/LanguageSelect";
+import ThemeSwitch from "@/components/header/theme-switch";
+import LanguageSelect from "@/components/header/language-select";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -12,7 +12,6 @@ const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Tags", href: "/tags" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
 ];
 
 const Header = () => {

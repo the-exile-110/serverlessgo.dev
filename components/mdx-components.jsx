@@ -2,9 +2,9 @@
 import { useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
 import Image from "next/image";
-import CustomLink from "@/components/Link";
-import TOCInline from "@/components/TOCInline";
-import Pre from "@/components/Pre";
+import CustomLink from "@/components/link";
+import TOCInline from "@/components/toc-inline";
+import Pre from "@/components/pre";
 
 export const MDXComponents = {
   Image,
