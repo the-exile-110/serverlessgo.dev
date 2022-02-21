@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: { en: 'ServerlessGo', zh: 'ServerlessGo', ja: 'ServerlessGo' },
+  title: 'ServerlessGo',
   author: 'RUI',
-  headerTitle: { en: 'ServerlessGo', zh: 'ServerlessGo', ja: 'ServerlessGo' },
+  headerTitle: 'ServerlessGo',
   // description: 'A blog created with Next.js and Tailwind.css',
   description: {
     en: 'Share serverless knowledge and skills',

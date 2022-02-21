@@ -1,21 +1,22 @@
-import Link from "@/components/link";
-import classnames from "classnames";
-import { useRouter } from "next/router";
-import { Disclosure } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import ThemeSwitch from "@/components/header/theme-switch";
-import LanguageSelect from "@/components/header/language-select";
+import Link from '@/components/link'
+import classnames from 'classnames'
+import { useRouter } from 'next/router'
+import { Disclosure } from '@headlessui/react'
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import ThemeSwitch from '@/components/header/theme-switch'
+import LanguageSelect from '@/components/header/language-select'
+import siteMetadata from '@/data/site-metadata'
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "All posts", href: "/all-posts" },
-  { name: "Projects", href: "/projects" },
-  { name: "Tags", href: "/tags" },
-  { name: "About", href: "/about" },
-];
+  { name: 'Home', href: '/' },
+  { name: 'All posts', href: '/all-posts' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Tags', href: '/tags' },
+  { name: 'About', href: '/about' },
+]
 
 const Header = () => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Disclosure
       as="nav"
@@ -45,11 +46,11 @@ const Header = () => {
                         key={item.name}
                         className={classnames(
                           item.href === router.pathname
-                            ? "border-sky-300 dark:border-white text-gray-900 dark:text-gray-50"
-                            : "border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700",
-                          "inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium h-full focus:outline-none transition-colors duration-150"
+                            ? 'border-sky-300 dark:border-white text-gray-900 dark:text-gray-50'
+                            : 'border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700',
+                          'inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium h-full focus:outline-none transition-colors duration-150'
                         )}
-                        aria-current={item.href === router.pathname ? "page" : undefined}
+                        aria-current={item.href === router.pathname ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -84,11 +85,11 @@ const Header = () => {
                     as="a"
                     className={classnames(
                       item.href === router.pathname
-                        ? "bg-indigo-50 dark:bg-gray-500 border-sky-500 text-sky-700 dark:text-gray-50"
-                        : "border-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800",
-                      "block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+                        ? 'bg-indigo-50 dark:bg-gray-500 border-sky-500 text-sky-700 dark:text-gray-50'
+                        : 'border-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800',
+                      'block pl-3 pr-4 py-2 border-l-4 text-base font-medium'
                     )}
-                    aria-current={item.href === router.pathname ? "page" : undefined}
+                    aria-current={item.href === router.pathname ? 'page' : undefined}
                   >
                     {item.name}
                   </Disclosure.Button>
@@ -105,6 +106,6 @@ const Header = () => {
         </>
       )}
     </Disclosure>
-  );
-};
-export default Header;
+  )
+}
+export default Header
