@@ -1,18 +1,18 @@
-import Link from "@/components/link";
-import PageTitle from "@/components/page-title";
-import SectionContainer from "@/components/section-container";
-import { BlogSeo } from "@/components/seo";
-import Image from "next/image";
-import Tag from "@/components/tag";
-import siteMetadata from "@/data/siteMetadata";
-import useTranslation from "next-translate/useTranslation";
-import formatDate from "@/lib/utils/formatDate";
-import { useRouter } from "next/router";
+import Link from '@/components/link'
+import PageTitle from '@/components/page-title'
+import SectionContainer from '@/components/section-container'
+import { BlogSeo } from '@/components/seo'
+import Image from 'next/image'
+import Tag from '@/components/tag'
+import siteMetadata from '@/data/site-metadata'
+import useTranslation from 'next-translate/useTranslation'
+import formatDate from '@/lib/utils/formatDate'
+import { useRouter } from 'next/router'
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, date, title, tags } = frontMatter;
-  const { t } = useTranslation();
-  const { locale } = useRouter();
+  const { slug, date, title, tags } = frontMatter
+  const { t } = useTranslation()
+  const { locale } = useRouter()
 
   return (
     <SectionContainer>
@@ -60,7 +60,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         />
                       )}
                       <dl className="text-sm font-medium leading-5 whitespace-nowrap">
-                        <dt className="sr-only">{t("common:name")}</dt>
+                        <dt className="sr-only">{t('common:name')}</dt>
                         <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                         <dt className="sr-only">Twitter</dt>
                         <dd>
@@ -69,7 +69,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                               href={author.twitter}
                               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                             >
-                              {author.twitter.replace("https://twitter.com/", "@")}
+                              {author.twitter.replace('https://twitter.com/', '@')}
                             </Link>
                           )}
                         </dd>
@@ -94,7 +94,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {prev && (
                     <div>
                       <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                        {t("common:preva")}
+                        {t('common:preva')}
                       </h2>
                       <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                         <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
@@ -104,7 +104,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   {next && (
                     <div>
                       <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                        {t("common:nexta")}
+                        {t('common:nexta')}
                       </h2>
                       <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                         <Link href={`/blog/${next.slug}`}>{next.title}</Link>
@@ -119,12 +119,12 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 href="/blog"
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
               >
-                &larr; {t("common:back")}
+                &larr; {t('common:back')}
               </Link>
             </div>
           </div>
         </div>
       </article>
     </SectionContainer>
-  );
+  )
 }

@@ -1,19 +1,19 @@
-import Link from "@/components/link";
-import { PageSeo } from "@/components/seo";
-import Tag from "@/components/tag";
-import siteMetadata from "@/data/siteMetadata";
-import { getAllTags } from "@/lib/tags";
-import kebabCase from "@/lib/utils/kebabCase";
+import Link from '@/components/link'
+import { PageSeo } from '@/components/seo'
+import Tag from '@/components/tag'
+import siteMetadata from '@/data/site-metadata'
+import { getAllTags } from '@/lib/tags'
+import kebabCase from '@/lib/utils/kebabCase'
 
 export async function getStaticProps({ defaultLocale, locale }) {
-  const otherLocale = locale !== defaultLocale ? locale : "";
-  const tags = await getAllTags("blog", otherLocale);
+  const otherLocale = locale !== defaultLocale ? locale : ''
+  const tags = await getAllTags('blog', otherLocale)
 
-  return { props: { tags } };
+  return { props: { tags } }
 }
 
 export default function Tags({ tags }) {
-  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a]);
+  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
   return (
     <>
       <PageSeo title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />
@@ -27,7 +27,7 @@ export default function Tags({ tags }) {
             </div>
             <div className="flex w-full h-full align-top">
               <div className="flex flex-wrap w-full max-h-5">
-                {Object.keys(tags).length === 0 && "No tags found."}
+                {Object.keys(tags).length === 0 && 'No tags found.'}
                 {sortedTags.map((t) => {
                   return (
                     <div key={t} className="p-3 mt-2 mb-2 mr-5 bg-white rounded-md shadow-md">
@@ -39,7 +39,7 @@ export default function Tags({ tags }) {
                         {` (${tags[t]})`}
                       </Link>
                     </div>
-                  );
+                  )
                 })}
               </div>
             </div>
@@ -47,5 +47,5 @@ export default function Tags({ tags }) {
         </div>
       </div>
     </>
-  );
+  )
 }
