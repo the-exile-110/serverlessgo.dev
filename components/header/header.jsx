@@ -1,7 +1,9 @@
 import Link from '@/components/link';
+import Image from 'next/image';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import { Disclosure } from '@headlessui/react';
+import Logo from '@/assets/svg/logo';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import ThemeSwitch from '@/components/header/theme-switch';
 import LanguageSelect from '@/components/header/language-select';
@@ -26,8 +28,8 @@ const Header = () => {
           <div className="w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex">
-                <div className="flex items-center flex-shrink-0">
-                  <img
+                <div className="flex items-center flex-shrink-0 space-x-3 text-slate-700 dark:text-slate-100">
+                  {/* <img
                     className="block w-auto h-8 lg:hidden"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"
@@ -36,7 +38,9 @@ const Header = () => {
                     className="hidden w-auto h-8 lg:block"
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
                     alt="Workflow"
-                  />
+                  /> */}
+                  <Logo className="block w-auto h-8 stroke-slate-700 dark:stroke-slate-100" />
+                  <span className="">ServerlessGo</span>
                 </div>
                 <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                   {navigation.map((item) => (
