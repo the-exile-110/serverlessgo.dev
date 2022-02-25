@@ -1,15 +1,15 @@
-import Link from "@/components/link";
-import Tag from "@/components/tag";
-import { useState } from "react";
-import Pagination from "@/components/pagination";
-import formatDate from "@/lib/utils/formatDate";
-import useTranslation from "next-translate/useTranslation";
-import { useRouter } from "next/router";
+import Link from '@/components/link';
+import Tag from '@/components/tag';
+import { useState } from 'react';
+import Pagination from '@/components/pagination';
+import formatDate from '@/lib/utils/formatDate';
+import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(" ");
+    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ');
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
@@ -32,8 +32,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               aria-label="Search articles"
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
-              placeholder={t("common:search")}
-              className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-300 rounded-md dark:border-gray-900 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:text-gray-100"
+              placeholder={t('common:search')}
+              className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-300 rounded-md dark:border-gray-900 focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-800 dark:text-gray-100"
             />
             <svg
               className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
@@ -52,14 +52,14 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && "No posts found."}
+          {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter;
             return (
               <li key={slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                   <dl>
-                    <dt className="sr-only">{t("common:pub")}</dt>
+                    <dt className="sr-only">{t('common:pub')}</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date, locale)}</time>
                     </dd>

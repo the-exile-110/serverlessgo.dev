@@ -1,6 +1,5 @@
-import Link from "@/components/link";
-
-import useTranslation from "next-translate/useTranslation";
+import Link from '@/components/link';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Pagination({ totalPages, currentPage }) {
   const { t } = useTranslation();
@@ -12,25 +11,25 @@ export default function Pagination({ totalPages, currentPage }) {
       <nav className="flex justify-between">
         {!prevPage && (
           <button rel="previous" className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-            {t("common:prevp")}
+            {t('common:prevp')}
           </button>
         )}
         {prevPage && (
           <Link href={currentPage - 1 === 1 ? `/blog/` : `/blog/page/${currentPage - 1}`}>
-            <button rel="previous">{t("common:prevp")}</button>
+            <button rel="previous">{t('common:prevp')}</button>
           </Link>
         )}
         <span>
-          {currentPage} {t("common:of")} {totalPages}
+          {currentPage} {t('common:of')} {totalPages}
         </span>
         {!nextPage && (
           <button rel="next" className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-            {t("common:nextp")}
+            {t('common:nextp')}
           </button>
         )}
         {nextPage && (
           <Link href={`/blog/page/${currentPage + 1}`}>
-            <button rel="next">{t("common:nextp")}</button>
+            <button rel="next">{t('common:nextp')}</button>
           </Link>
         )}
       </nav>
