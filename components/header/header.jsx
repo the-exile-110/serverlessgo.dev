@@ -1,9 +1,8 @@
 import Link from '@/components/link';
-import Image from 'next/image';
 import classnames from 'classnames';
 import { useRouter } from 'next/router';
 import { Disclosure } from '@headlessui/react';
-import Logo from '@/assets/svg/logo';
+import Logo from '@/assets/logo';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import ThemeSwitch from '@/components/header/theme-switch';
 import LanguageSelect from '@/components/header/language-select';
