@@ -1,30 +1,29 @@
-import Link from '@/components/link'
-import classnames from 'classnames'
-import { useRouter } from 'next/router'
-import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import ThemeSwitch from '@/components/header/theme-switch'
-import LanguageSelect from '@/components/header/language-select'
-import siteMetadata from '@/data/site-metadata'
+import Link from '@/components/link';
+import classnames from 'classnames';
+import { useRouter } from 'next/router';
+import { Disclosure } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import ThemeSwitch from '@/components/header/theme-switch';
+import LanguageSelect from '@/components/header/language-select';
 
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'All posts', href: '/all-posts' },
   { name: 'Projects', href: '/projects' },
   { name: 'Tags', href: '/tags' },
-  { name: 'About', href: '/about' },
-]
+  { name: 'About', href: '/about' }
+];
 
 const Header = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <Disclosure
       as="nav"
-      className="bg-white border-b border-gray-200 dark:bg-gray-700 dark:border-gray-500"
+      className="sticky top-0 z-20 flex flex-col items-center justify-between w-full bg-white border-b border-gray-200 dark:border-gray-800 dark:bg-black bg-opacity-30 dark:bg-opacity-30 backdrop-filter backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100"
     >
       {({ open }) => (
         <>
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex items-center flex-shrink-0">
@@ -47,7 +46,7 @@ const Header = () => {
                         className={classnames(
                           item.href === router.pathname
                             ? 'border-sky-300 dark:border-white text-gray-900 dark:text-gray-50'
-                            : 'border-transparent text-gray-500 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700',
+                            : 'border-transparent text-gray-900 dark:text-gray-300 hover:border-gray-300 hover:text-gray-700',
                           'inline-flex items-center px-1 pt-1 border-b-2 text-md font-medium h-full focus:outline-none transition-colors duration-150'
                         )}
                         aria-current={item.href === router.pathname ? 'page' : undefined}
@@ -76,7 +75,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="w-full sm:hidden">
             <div className="pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link href={item.href}>
@@ -106,6 +105,6 @@ const Header = () => {
         </>
       )}
     </Disclosure>
-  )
-}
-export default Header
+  );
+};
+export default Header;

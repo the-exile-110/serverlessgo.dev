@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
@@ -46,7 +46,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="max-w-full max-h-full ml-auto mr-auto antialiased text-black bg-slate-100 dark:bg-gray-800 dark:text-white">
+        <body className="max-w-full max-h-full ml-auto mr-auto antialiased text-black transition duration-200 ease-in-out transform bg-slate-100 dark:bg-gray-800 dark:text-white">
           <Main />
           <NextScript />
         </body>

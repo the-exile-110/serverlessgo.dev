@@ -1,7 +1,7 @@
-import { useRouter } from "next/router";
-import { Menu, Transition } from "@headlessui/react";
-import { Fragment } from "react";
-import { TranslateIcon } from "@heroicons/react/solid";
+import { useRouter } from 'next/router';
+import { Menu, Transition } from '@headlessui/react';
+import { Fragment } from 'react';
+import { TranslateIcon } from '@heroicons/react/solid';
 
 const LanguageSelect = () => {
   const router = useRouter();
@@ -12,20 +12,20 @@ const LanguageSelect = () => {
 
   const languages = [
     {
-      name: "English",
-      value: "en",
-      icon: <English className="w-5 h-5 mr-2" aria-hidden="true" />,
+      name: 'English',
+      value: 'en',
+      icon: <English className="w-5 h-5 mr-2" aria-hidden="true" />
     },
     {
-      name: "中文",
-      value: "zh",
-      icon: <China className="w-5 h-5 mr-2" aria-hidden="true" />,
+      name: '中文',
+      value: 'zh',
+      icon: <China className="w-5 h-5 mr-2" aria-hidden="true" />
     },
     {
-      name: "日本語",
-      value: "jp",
-      icon: <Japan className="w-5 h-5 mr-2" aria-hidden="true" />,
-    },
+      name: '日本語',
+      value: 'jp',
+      icon: <Japan className="w-5 h-5 mr-2" aria-hidden="true" />
+    }
   ];
 
   return (
@@ -52,7 +52,7 @@ const LanguageSelect = () => {
                   {({ active }) => (
                     <button
                       className={`${
-                        active ? " bg-gray-200 text-gray-900" : "text-gray-900 dark:text-gray-300"
+                        active ? ' bg-gray-200 text-gray-900' : 'text-gray-900 dark:text-gray-300'
                       } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                       onClick={() => changeLanguage(locale.value)}
                     >

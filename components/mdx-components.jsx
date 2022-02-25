@@ -1,10 +1,10 @@
 /* eslint-disable react/display-name */
-import { useMemo } from "react";
-import { getMDXComponent } from "mdx-bundler/client";
-import Image from "next/image";
-import CustomLink from "@/components/link";
-import TOCInline from "@/components/toc-inline";
-import Pre from "@/components/pre";
+import { useMemo } from 'react';
+import { getMDXComponent } from 'mdx-bundler/client';
+import Image from 'next/image';
+import CustomLink from '@/components/link';
+import TOCInline from '@/components/toc-inline';
+import Pre from '@/components/pre';
 
 export const MDXComponents = {
   Image,
@@ -12,9 +12,9 @@ export const MDXComponents = {
   a: CustomLink,
   pre: Pre,
   wrapper: ({ components, layout, ...rest }) => {
-    const Layout = require(`../layouts/${layout}`).default;
+    const Layout = require(`./layouts/${layout}`).default;
     return <Layout {...rest} />;
-  },
+  }
 };
 
 export const MDXLayoutRenderer = ({ layout, mdxSource, ...rest }) => {
