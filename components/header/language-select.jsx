@@ -32,7 +32,7 @@ const LanguageSelect = () => {
     <div>
       <Menu as="div" className="relative inline-block text-center">
         <div>
-          <Menu.Button className="p-1 text-gray-400 bg-white rounded-full dark:bg-gray-600 dark:text-gray-200 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-gray-400">
+          <Menu.Button className="p-1 text-gray-400 rounded-full dark:text-gray-200 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-gray-400">
             <TranslateIcon className="w-6 h-6" aria-hidden="true" />
           </Menu.Button>
         </div>

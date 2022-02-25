@@ -2,8 +2,8 @@
 name: RUI
 avatar: /static/images/avatar.jpg
 occupation: Full stack engineer
-# company: From japan
-twitter: https://twitter.com/QQTEKU
+company: In japan
+twitter: https://twitter.com/tietougongshiba
 # linkedin: https://www.linkedin.com/sparrowhawk
 ---
 
@@ -16,4 +16,4 @@ My favorite cloud service is AWS, and I'm recently learning about Azure and GCP.
 I will share my daily development experience and some tips and tricks here.\
 Welcome to discuss with me about various technologies and cats : )
 
-![Cat gif](/static/images/cat_gif.gif "Cat gif")
+![Cat gif](/static/images/cat_gif.gif 'Cat gif')

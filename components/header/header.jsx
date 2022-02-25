@@ -27,20 +27,12 @@ const Header = () => {
           <div className="w-full px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex">
-                <div className="flex items-center flex-shrink-0 space-x-3 text-slate-700 dark:text-slate-100">
-                  {/* <img
-                    className="block w-auto h-8 lg:hidden"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                  <img
-                    className="hidden w-auto h-8 lg:block"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                    alt="Workflow"
-                  /> */}
-                  <Logo className="block w-auto h-8 stroke-slate-700 dark:stroke-slate-100" />
-                  <span className="">ServerlessGo</span>
-                </div>
+                <Link href="/">
+                  <a className="flex items-center flex-shrink-0 space-x-3 text-slate-700 dark:text-slate-100">
+                    <Logo className="block w-auto h-8 stroke-slate-700 dark:stroke-slate-100" />
+                    <span className="">ServerlessGo</span>
+                  </a>
+                </Link>
                 <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                   {navigation.map((item) => (
                     <Link href={item.href}>

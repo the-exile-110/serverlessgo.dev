@@ -1,21 +1,21 @@
-import Link from '@/components/link'
-import PageTitle from '@/components/page-title'
-import SectionContainer from '@/components/section-container'
-import { BlogSeo } from '@/components/seo'
-import Image from '@/components/image'
-import Tag from '@/components/tag'
-import siteMetadata from '@/data/site-metadata'
-import useTranslation from 'next-translate/useTranslation'
-import formatDate from '@/lib/utils/formatDate'
-import { useRouter } from 'next/router'
+import Link from '@/components/link';
+import PageTitle from '@/components/page-title';
+import SectionContainer from '@/components/section-container';
+import { BlogSeo } from '@/components/seo';
+import Image from '@/components/image';
+import Tag from '@/components/tag';
+import siteMetadata from '@/data/site-metadata';
+import useTranslation from 'next-translate/useTranslation';
+import formatDate from '@/lib/utils/formatDate';
+import { useRouter } from 'next/router';
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
+  )}`;
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 export default function PostLayout({
   frontMatter,
@@ -23,11 +23,11 @@ export default function PostLayout({
   next,
   prev,
   availableLocales,
-  children,
+  children
 }) {
-  const { slug, fileName, date, title, tags } = frontMatter
-  const { t } = useTranslation()
-  const { locale } = useRouter()
+  const { slug, fileName, date, title, tags } = frontMatter;
+  const { t } = useTranslation();
+  const { locale } = useRouter();
 
   return (
     <SectionContainer>
@@ -81,7 +81,7 @@ export default function PostLayout({
                           {author.twitter && (
                             <Link
                               href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                              className="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400"
                             >
                               {author.twitter.replace('https://twitter.com/', '@')}
                             </Link>
@@ -124,7 +124,7 @@ export default function PostLayout({
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           {t('common:preva')}
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
@@ -134,7 +134,7 @@ export default function PostLayout({
                         <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
                           {t('common:nexta')}
                         </h2>
-                        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                        <div className="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
@@ -145,7 +145,7 @@ export default function PostLayout({
               <div className="pt-4 xl:pt-8">
                 <Link
                   href="/blog"
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400"
                 >
                   &larr; {t('common:back')}
                 </Link>
@@ -155,5 +155,5 @@ export default function PostLayout({
         </div>
       </article>
     </SectionContainer>
-  )
+  );
 }

@@ -1,25 +1,25 @@
-import Link from '@/components/link'
-import { PageSeo } from '@/components/seo'
-import Tag from '@/components/tag'
-import siteMetadata from '@/data/site-metadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
-import useTranslation from 'next-translate/useTranslation'
-import { useRouter } from 'next/router'
-import Image from 'next/image'
+import Link from '@/components/link';
+import { PageSeo } from '@/components/seo';
+import Tag from '@/components/tag';
+import siteMetadata from '@/data/site-metadata';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
+import formatDate from '@/lib/utils/formatDate';
+import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 5;
 
 export async function getStaticProps({ locale, defaultLocale }) {
-  const otherLocale = locale !== defaultLocale ? locale : ''
-  const posts = await getAllFilesFrontMatter('blog', otherLocale)
+  const otherLocale = locale !== defaultLocale ? locale : '';
+  const posts = await getAllFilesFrontMatter('blog', otherLocale);
 
-  return { props: { posts } }
+  return { props: { posts } };
 }
 
 export default function Home({ posts }) {
-  const { t } = useTranslation()
-  const { locale } = useRouter()
+  const { t } = useTranslation();
+  const { locale } = useRouter();
   return (
     <>
       <PageSeo title={siteMetadata.title} description={siteMetadata.description} />
@@ -32,7 +32,7 @@ export default function Home({ posts }) {
         <ul className="max-w-4xl divide-y divide-gray-200 min-w-4xl">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, tags, image } = frontMatter
+            const { slug, date, title, tags, image } = frontMatter;
             return (
               <li key={slug} className="min-w-full py-12">
                 <article className="flex flex-col items-center content-center justify-center ">
@@ -79,7 +79,7 @@ export default function Home({ posts }) {
                   </div>
                 </article>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
@@ -87,7 +87,7 @@ export default function Home({ posts }) {
         <div className="flex justify-end w-auto text-base font-medium leading-6">
           <Link
             href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="text-sky-500 hover:text-sky-600 dark:hover:text-sky-400"
             aria-label="all posts"
           >
             {t('common:all')} &rarr;
@@ -95,5 +95,5 @@ export default function Home({ posts }) {
         </div>
       )}
     </>
-  )
+  );
 }
