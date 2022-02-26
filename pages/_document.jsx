@@ -39,7 +39,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="max-w-full max-h-full ml-auto mr-auto antialiased text-black transition duration-200 ease-in-out transform bg-slate-100 dark:bg-gray-800 dark:text-white">
+        <body className="bg-gradient-to-tl from-blue-100 via-blue-300 to-blue-500 dark:from-gray-900 dark:to-gray-600 dark:bg-gradient-to-tl backdrop-filter backdrop-blur-3xl backdrop-saturate-150 bg-opacity-40 max-w-full max-h-full ml-auto mr-auto antialiased text-black transition duration-200 ease-in-out transform dark:text-white">
           <Main />
           <NextScript />
         </body>

@@ -23,7 +23,7 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSeo title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="flex flex-col items-center content-center justify-center w-5/6 mt-5 divide-y divide-gray-200 pb-52 dark:divide-gray-700">
+      <div className="flex flex-col items-center h-full content-center justify-center w-5/6 mt-5 divide-y">
         <div className="flex flex-col items-center content-center justify-center w-full pt-6 pb-4 space-y-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {t('common:greeting')}
