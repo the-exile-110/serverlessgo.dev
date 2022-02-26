@@ -8,8 +8,7 @@ import ThemeSwitch from '@/components/header/theme-switch';
 import LanguageSelect from '@/components/header/language-select';
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'All posts', href: '/all-posts' },
+  { name: 'Blog', href: '/' },
   { name: 'Projects', href: '/projects' },
   { name: 'Tags', href: '/tags' },
   { name: 'About', href: '/about' }
@@ -20,7 +19,7 @@ const Header = () => {
   return (
     <Disclosure
       as="nav"
-      className="sticky top-0 z-20 flex flex-col items-center justify-between w-full bg-white border-b border-gray-200 dark:border-gray-800 dark:bg-black bg-opacity-30 dark:bg-opacity-30 backdrop-filter backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100"
+      className="sticky top-0 z-20 flex flex-col items-center justify-between w-full bg-white border-b border-gray-200 dark:border-gray-800 dark:bg-black bg-opacity-75 dark:bg-opacity-75 backdrop-filter backdrop-saturate-150 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100"
     >
       {({ open }) => (
         <>
