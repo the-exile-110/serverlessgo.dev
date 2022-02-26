@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import { PageSeo } from '@/components/seo'
+import Image from '@/components/image';
+import { PageSeo } from '@/components/seo';
 
-import useTranslation from 'next-translate/useTranslation'
+import useTranslation from 'next-translate/useTranslation';
 
 export default function AuthorLayout({ children, frontMatter }) {
-  const { name, avatar, occupation, company } = frontMatter
-  const { t } = useTranslation()
+  const { name, avatar, occupation, company } = frontMatter;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -42,5 +42,5 @@ export default function AuthorLayout({ children, frontMatter }) {
         </div>
       </div>
     </>
-  )
+  );
 }

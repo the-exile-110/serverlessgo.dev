@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import PageTitle from '@/components/page-title';
 import SectionContainer from '@/components/section-container';
 import { BlogSeo } from '@/components/seo';
@@ -15,17 +15,15 @@ const discussUrl = (slug) =>
     `${siteMetadata.siteUrl}/blog/${slug}`
   )}`;
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const postDateTemplate = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+};
 
-export default function PostLayout({
-  frontMatter,
-  authorDetails,
-  next,
-  prev,
-  availableLocales,
-  children
-}) {
-  const { slug, fileName, date, title, tags } = frontMatter;
+export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
+  const { slug, date, title, tags } = frontMatter;
   const { t } = useTranslation();
   const { locale } = useRouter();
 
@@ -34,24 +32,13 @@ export default function PostLayout({
       <BlogSeo
         url={`${siteMetadata.siteUrl}/blog/${slug}`}
         authorDetails={authorDetails}
-        availableLocales={availableLocales}
         {...frontMatter}
       />
       <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
+        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700 h-full">
           <header className="pt-6 xl:pb-6">
             <div className="space-y-1 text-center">
-              <dl className="space-y-10">
-                <div>
-                  <dt className="sr-only">{t('common:pub')}</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(new Date(date), locale)}</time>
-                  </dd>
-                </div>
-              </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
-              </div>
+              <PageTitle>{title}</PageTitle>
             </div>
           </header>
           <div
@@ -95,13 +82,6 @@ export default function PostLayout({
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {t('common:twitter')}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{t('common:github')}</Link>
-              </div>
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
