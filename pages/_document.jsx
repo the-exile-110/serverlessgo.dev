@@ -18,12 +18,7 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link
-            rel="mask-icon"
-            //href="/static/favicons/safari-pinned-tab.svg"
-            href="/static/favicons/favicon.io"
-            color="#5bbad5"
-          />
+          <link rel="mask-icon" href="/static/favicons/favicon.io" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
@@ -39,7 +34,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="transition duration-200 ease-in-out transform antialiased text-black bg-sky-100 dark:bg-gray-900 dark:text-white">
+        <body className="antialiased text-black transition duration-200 ease-in-out transform bg-gray-100 dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
         </body>

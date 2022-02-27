@@ -4,6 +4,8 @@ avatar: /static/images/avatar.jpg
 occupation: Full stack engineer
 company: In japan
 twitter: https://twitter.com/tietougongshiba
+github: https://github.com/the-exile-110
+email: contact@serverlessgo.dev
 # linkedin: https://www.linkedin.com/sparrowhawk
 ---
 
