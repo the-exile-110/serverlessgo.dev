@@ -16,14 +16,14 @@ In 2021, I developed two SaaS services using serverless, which led me to discove
 
 # Timeline
 
-# 2022
+## 2022
 
 - Started learning Rust
 - Started learning Azure, GCP
 - Trying to challenge all AWS certifications (as of February 2022, I have 10 certifications)
 - Released this website.
 
-# 2021
+## 2021
 
 - Changed jobs and started as a full stack engineer
 - Started learning Golang
@@ -31,7 +31,7 @@ In 2021, I developed two SaaS services using serverless, which led me to discove
 - Built two SaaS services using serverless and became a serverless enthusiast
 - Released my first full-stack project [WhatBirds](https://www.whatbirds.com/) (Use serverless architecture)
 
-# 2020
+## 2020
 
 - Got AWS Certified Solutions Architect - Professional
 - Got AWS Certified DevOps Engineer - Professional
@@ -43,7 +43,7 @@ In 2021, I developed two SaaS services using serverless, which led me to discove
 - Began the path of self-learning programming (Python and AWS Cloud).
 - At the end of 2019, I officially moved to engineer as an AWS Solutions Architect plant.
 
-# 2017
+## 2017
 
 - With a small amount of start-up capital in hand plus his own expertise, started a cross-border e-commerce in Amazon.
 - During this time, I learned and applied a lot about advertising and SEO.
