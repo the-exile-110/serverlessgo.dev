@@ -1,9 +1,9 @@
-import "@/css/tailwind.css";
+import '@/css/tailwind.css';
 
-import { ThemeProvider } from "next-themes";
-import Head from "next/head";
-import Analytics from "@/components/analytics";
-import LayoutWrapper from "@/components/layout-wrapper";
+import { ThemeProvider } from 'next-themes';
+import Head from 'next/head';
+import Analytics from '@/components/analytics';
+import LayoutWrapper from '@/components/layouts/layout-wrapper';
 
 export default function App({ Component, pageProps }) {
   return (

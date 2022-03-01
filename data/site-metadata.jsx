@@ -6,9 +6,9 @@ const siteMetadata = {
   description: {
     en: 'Share serverless knowledge and skills',
     zh: 'Share serverless knowledge and skills',
-    ja: 'Share serverless knowledge and skills',
+    ja: 'Share serverless knowledge and skills'
   },
-  language: 'en-us',
+  language: 'en',
   siteUrl: 'https://www.serverlessgo.dev',
   siteRepo: 'https://github.com/the-exile-110/serverlessgo.dev',
   siteLogo: '/static/images/logo.png',
@@ -20,12 +20,12 @@ const siteMetadata = {
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  locale: 'en',
   analytics: {
     // supports plausible, simpleAnalytics or googleAnalytics
     plausibleDataDomain: 'https://www.serverlessgo.dev', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: true, // true or false
-    googleAnalyticsId: 'G-S3K80BHZ49', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-S3K80BHZ49' // e.g. UA-000000-2 or G-XXXXXXX
   },
   comment: {
     // Select a provider and use the environment variables associated to it
@@ -50,7 +50,7 @@ const siteMetadata = {
       // If the theme option above is set to 'custom`
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css
-      themeURL: '',
+      themeURL: ''
     },
     utterancesConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
@@ -62,13 +62,13 @@ const siteMetadata = {
       // github-dark-orange, icy-dark, dark-blue, photon-dark, boxy-light
       theme: '',
       // theme when dark mode
-      darkTheme: '',
+      darkTheme: ''
     },
     disqus: {
       // https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-      shortname: process.env.NEXT_PUBLIC_DISQUS_SHORTNAME,
-    },
-  },
-}
+      shortname: process.env.NEXT_PUBLIC_DISQUS_SHORTNAME
+    }
+  }
+};
 
-module.exports = siteMetadata
+module.exports = siteMetadata;

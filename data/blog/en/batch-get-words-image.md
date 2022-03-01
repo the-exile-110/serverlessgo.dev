@@ -1,13 +1,12 @@
 ---
-title: "Using Python batch extraction of Word documents in the image"
-date: "2021-01-12"
-lastmod: "2021-08-08"
-tags: ["python", "word"]
+title: 'Using Python batch extraction of Word documents in the image'
+date: '2021-01-12'
+lastmod: '2021-08-08'
+tags: ['python', 'word']
 draft: false
-image: "/static/images/blog-images/word-image.png"
-images:
-  ["/static/images/canada/mountains.jpg", "/static/images/canada/toronto.jpg"]
-authors: ["default"]
+image: '/static/images/blog-images/word-image.png'
+images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
+authors: ['default']
 ---
 
 Recently, I had to extract images from a Word document and save them due to work requirements.

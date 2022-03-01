@@ -7,9 +7,7 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer>
       <div className="static flex flex-col justify-between w-full h-screen">
         <Header />
-        <main className="flex content-center justify-center w-full h-auto mb-auto mt-14">
-          {children}
-        </main>
+        <main className="flex flex-col max-w-3xl px-4 mx-auto xl:px-0">{children}</main>
         <Footer />
       </div>
     </SectionContainer>

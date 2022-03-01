@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215" height="130" fill="none" viewBox="0 0 215 130">
+  <path fill="#fff" d="M0 0h215v130H0z"/>
+  <path fill="url(#pattern0)" d="M0 51h84v29H0z"/>
+  <path fill="url(#pattern1)" d="M124 7h87v117h-87z"/>
+  <defs>
+    <pattern id="pattern0" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use transform="matrix(.00333 0 0 .00966 0 -.046)" xlink:href="#image0_1_12"/>
+    </pattern>
+    <pattern id="pattern1" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use transform="matrix(.00342 0 0 .00255 0 -.004)" xlink:href="#image1_1_12"/>
+    </pattern>
+  </defs>
+</svg>
