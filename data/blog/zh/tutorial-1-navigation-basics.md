@@ -3,12 +3,11 @@ title: 'Using Python batch extraction of Word documents in the image'
 date: '2021-01-12'
 lastmod: '2021-08-08'
 tags: ['python', 'word']
-draft: false
+draft: true
 image: '/static/images/blog-images/word-image.png'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default']
 ---
-
 Let's do a brief overview on how to navigate the Dendron UI.
 
 _Quick note on running commands in VS Code:_

@@ -3,12 +3,11 @@ title: 'Using Python batch extraction of Word documents in the image'
 date: '2021-01-12'
 lastmod: '2021-08-08'
 tags: ['python', 'word']
-draft: false
+draft: true
 image: '/static/images/blog-images/word-image.png'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default']
 ---
-
 ### Create a Note
 
 To create a note, use `Ctrl+L` to bring up Dendron's lookup. This is a shortcut for the `Dendron: Lookup Note` command.

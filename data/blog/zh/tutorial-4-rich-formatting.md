@@ -3,21 +3,20 @@ title: 'Using Python batch extraction of Word documents in the image'
 date: '2021-01-12'
 lastmod: '2021-08-08'
 tags: ['python', 'word']
-draft: false
+draft: true
 image: '/static/images/blog-images/word-image.png'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default']
 ---
-
 Dendron supports an extended Markdown syntax, which provides a lot of options for rich formatting. Take a look at some examples in this note to see what's possible. Have the preview pane opened (`Dendron: Show Preview`) to see how these will get rendered.
 
 #### Markdown Formatting Options
 
-| Formatting    |     Example     |
-| :------------ | :-------------: |
+| Formatting    |        Example        |
+| :------------ | :-------------------: |
 | Bold          | **Hello World** |
-| Italics       |  _Hello World_  |
-| Strikethrough | ~~Hello World~~ |
+| Italics       |    _Hello World_    |
+| Strikethrough |   ~~Hello World~~   |
 
 #### Images
 

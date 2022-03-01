@@ -3,12 +3,11 @@ title: 'Using Python batch extraction of Word documents in the image'
 date: '2021-01-12'
 lastmod: '2021-08-08'
 tags: ['python', 'word']
-draft: false
+draft: true
 image: '/static/images/blog-images/word-image.png'
 images: ['/static/images/canada/mountains.jpg', '/static/images/canada/toronto.jpg']
 authors: ['default']
 ---
-
 ### Links
 
 Dendron supports links between your notes, which can help you organically connect your thoughts and build up a powerful and **personal** knowledge graph.
@@ -39,10 +38,10 @@ You can explore the hierarchical organization of your notes and how your notes a
 
 - Tutorial Step 4: [[Rich Formatting|tutorial.4-rich-formatting]]
 - Try out some additional features of links:
-  - Create a note directly from a link - place your cursor inside this link `[[recipes.new-recipes-to-try]]`, hit `CTRL+ENTER`.
+  - Create a note directly from a link - place your cursor inside this link`[[recipes.new-recipes-to-try]]`, hit`CTRL+ENTER`.
   - Add an alias to a link to change how it shows in the preview. Example: [[My Alias|tutorial]]
-  - Relative Links - Link to a specific section of a page with a `#` suffix. Example: [[Additional Link Features|tutorial.3-links-and-graphs#additional-link-features]]
-  - Note References - Add a section from another note with its content inlined into the current note. [References Docs](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c.html#note-reference)
+  - Relative Links - Link to a specific section of a page with a`#` suffix. Example: [[Additional Link Features|tutorial.3-links-and-graphs#additional-link-features]]
+  - Note References - Add a section from another note with its content inlined into the current note.[References Docs](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c.html#note-reference)
 
 ---
 
