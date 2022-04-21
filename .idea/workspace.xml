@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f1be288-d450-46ce-8948-3340b40cc9b2" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/data/blog/en/use-aws-cdk-on-docker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/blog/zh/use-aws-cdk-on-docker.zh.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/aws/feed.zh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/cdk/feed.zh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tags/docker/feed.zh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/i18n.json" beforeDir="false" afterPath="$PROJECT_DIR$/i18n.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/feed.zh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/feed.zh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/[...slug].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[...slug].jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/feed.jp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/feed.jp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/python/feed.jp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/python/feed.jp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/python/feed.zh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/python/feed.zh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/word/feed.jp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/word/feed.jp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/word/feed.zh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/word/feed.zh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/generate-sitemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate-sitemap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -69,6 +79,9 @@
       <recent name="\\wsl$\Ubuntu\home\qq\app\serverlessgo.dev\data\blog\jp" />
       <recent name="\\wsl$\Ubuntu\home\qq\app\serverlessgo.dev\data\blog\en" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\qq\app\serverlessgo.dev\data\blog" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650546509115</updated>
-      <workItem from="1650546510245" duration="4049000" />
+      <workItem from="1650546510245" duration="4986000" />
     </task>
     <servers />
   </component>
@@ -95,6 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

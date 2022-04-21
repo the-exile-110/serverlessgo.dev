@@ -89,7 +89,9 @@ const i18nConfig = require('../i18n.json')
                 return `
                           <url>
                               <loc>${siteMetadata.siteUrl}${
-                  routeMultiLang.filter(([path, loc]) => (loc === defaultLocale ? path : ''))[0][0]
+                  routeMultiLang.filter(([path, loc]) => (loc === defaultLocale ? path : '')).map(
+                    ([path, loc]) => path.replace(`/${loc}`, '')
+                  )
                 }</loc>
                   ${routeMultiLang.map(
                     ([xe, xloc]) =>

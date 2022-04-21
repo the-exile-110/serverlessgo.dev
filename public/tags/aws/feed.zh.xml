@@ -8,7 +8,7 @@
       <managingEditor>contact@serverlessgo.dev (RUI)</managingEditor>
       <webMaster>contact@serverlessgo.dev (RUI)</webMaster>
       <lastBuildDate>Fri, 01 Apr 2022 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://www.serverlessgo.dev/tags/python/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://www.serverlessgo.dev/tags/aws/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://www.serverlessgo.dev/blog/zh/use-aws-cdk-on-docker</guid>
@@ -18,16 +18,6 @@
     <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
     <author>contact@serverlessgo.dev (RUI)</author>
     <category>python</category><category>CDK</category><category>Docker</category><category>AWS</category>
-  </item>
-
-  <item>
-    <guid>https://www.serverlessgo.dev/blog/zh/batch-get-words-image</guid>
-    <title>使用Python批量提取Word文档中的图片</title>
-    <link>https://www.serverlessgo.dev/blog/zh/batch-get-words-image</link>
-    undefined
-    <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
-    <author>contact@serverlessgo.dev (RUI)</author>
-    <category>python</category><category>word</category>
   </item>
 
     </channel>

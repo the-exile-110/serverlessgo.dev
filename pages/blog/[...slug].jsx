@@ -4,6 +4,7 @@ import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/mdx-components'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 
+export const POSTS_PER_PAGE = 10
 const DEFAULT_LAYOUT = 'post-layout'
 
 export async function getStaticPaths({ locales, defaultLocale }) {

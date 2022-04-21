@@ -4,7 +4,7 @@
     "jp",
     "zh"
   ],
-  "defaultLocale": "jp",
+  "defaultLocale": "en",
   "pages": {
     "*": [
       "common",
