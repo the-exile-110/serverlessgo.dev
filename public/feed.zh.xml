@@ -7,9 +7,19 @@
       <language>zh</language>
       <managingEditor>contact@serverlessgo.dev (RUI)</managingEditor>
       <webMaster>contact@serverlessgo.dev (RUI)</webMaster>
-      <lastBuildDate>Tue, 12 Jan 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 01 Apr 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.serverlessgo.dev/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://www.serverlessgo.dev/blog/zh/use-aws-cdk-on-docker</guid>
+    <title>在Docker上运行AWS CDK</title>
+    <link>https://www.serverlessgo.dev/blog/zh/use-aws-cdk-on-docker</link>
+    undefined
+    <pubDate>Fri, 01 Apr 2022 00:00:00 GMT</pubDate>
+    <author>contact@serverlessgo.dev (RUI)</author>
+    <category>python</category><category>CDK</category><category>Docker</category><category>AWS</category>
+  </item>
+
   <item>
     <guid>https://www.serverlessgo.dev/blog/zh/batch-get-words-image</guid>
     <title>使用Python批量提取Word文档中的图片</title>
@@ -18,16 +28,6 @@
     <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
     <author>contact@serverlessgo.dev (RUI)</author>
     <category>python</category><category>word</category>
-  </item>
-
-  <item>
-    <guid>https://www.serverlessgo.dev/blog/zh/create-go-app-with-sam</guid>
-    <title>使用SAM, Go Fiber创建基于AWS Lambda的高性能App (一) -- 搭建基本框架</title>
-    <link>https://www.serverlessgo.dev/blog/zh/create-go-app-with-sam</link>
-    undefined
-    <pubDate>Tue, 12 Jan 2021 00:00:00 GMT</pubDate>
-    <author>contact@serverlessgo.dev (RUI)</author>
-    <category>Golang</category><category>SAM</category><category>Serverless</category><category>Lambda</category>
   </item>
 
     </channel>
